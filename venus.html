@@ -5,14 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Handlee&display=swap" rel="stylesheet">
     <title>Venus</title>
 </head>
 <body>
-	<header>
-		<h1>VENUS</h1>
-		<h3>La atmósfera más caliente</h3>
-        <a href="venus.html"><img src="imgs/venus.png" alt="" width="100"></a>
-		<p>
+    <nav id="navegacion">
+            
+        <h1>Planetas</h1>
+        <br>
+        <p>Haz click en cada planeta para más información</p> <br>
+        <ul id="lista_planetas">
+            <!-- target blank me abre una nueva ventana -->
+            <li>Mercurio </li>
+            <a href="mercurio.html" target="_blank"><img class="planeta" src="imgs/Mercure.webp" alt="mercurio" ></a>    
+            <li>Venus</li>
+            <a href="venus.html" target="_blank"><img src="imgs/venus.png" alt="venus" class="planeta"></a>
+            <li>Tierra</li>
+            <a href="tierra.html" target="_blank"><img src="imgs/earth.png" alt="planeta tierra" class="planeta"></a>
+            <li>Marte</li>
+            <a href="marte.html" target="_blank"><img src="imgs/marte.png" alt="marte" class="planeta"></a>
+            <li>Júpiter</li>
+            <a href="jupiter.html" target="_blank"><img src="imgs/Jupiter.png" alt="jupiter" class="planeta" id="jupiter"></a>
+            <li>Saturno</li>
+            <a href="saturno.html" target="_blank"><img src="imgs/Saturn_from_Hubble.png" alt="saturno" class="planeta" id="saturno"></a>
+            <li>Urano</li>
+            <a href="urano.html" target="_blank"><img src="imgs/Uranus2.png" alt="urano" class="planeta"></a>
+            <li>Neptuno</li>
+            <a href="neptuno.html" target="_blank"><img src="imgs/Neptune_cutout.png" alt="neptuno" class="planeta"></a>
+
+        </ul>
+        <br>
+
+    </nav>
+
+	<main class="contenidos">
+		<hr>
+        <br><h1>VENUS</h1><br>
+        <hr>
+		<h2>La atmósfera más caliente</h2>
+        <a href="venus.html"><img class="planeta_en_pag" src="imgs/venus.png" alt="Planeta Venus"></a>
+		<p class="info_planetas">
 			Venus es el segundo planeta del sistema solar en orden de proximidad 
             al Sol y el tercero en cuanto a tamaño en orden ascendente después de 
             Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. 
@@ -28,9 +62,10 @@
             Venus sigue un patrón muy especial en su danza alrededor del sol el cual
             forma una especial geometría... puedes verlo en el siguiente video:
 		</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BwfNoKDKz3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>NOMBRE Y MITOLOGÍA</h2>
-        <p>
+        <iframe class="planet_videos" width="560" height="315" src="https://www.youtube.com/embed/BwfNoKDKz3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr><br><h2>NOMBRE Y MITOLOGÍA</h2><br><hr>
+        <p class="info_planetas">
             Recibe su nombre en honor a Venus, la diosa romana del amor (gr. Afrodita).
             Venus es el astro más característico en los cielos de la mañana y de la tarde 
             de la Tierra (después del Sol y la Luna), y es conocido desde la prehistoria. 
@@ -46,14 +81,19 @@
             y les llamaron Hesperus cuando aparecía en el cielo del Oeste al atardecer, 
             y Phosphorus cuando aparecía en el cielo del Este al amanecer.
         </p>
-        <img src="imgs/afrodita.jpg" alt="" width="600">
-    </header>
+        <img class="imgs_dioses" src="imgs/afrodita.jpg" alt="" width="600"> <!-- Revisar esto -->
+    </main>
 
+    <section id="redes">
+        <nav>
+            <a href="https://www.facebook.com/"><img src="imgs\Facebook_f_logo_(2019).png.svg" alt="Ir a la pagina de facebook" class="social_media"> </a>
+            <a href="https://www.instagram.com/"><img src="imgs\instagram.png" alt="Ir a la pagina de instagram" class="social_media"></a>
+            <a  href="https://www.web.whatsapp.com/"><img src="imgs\WhatsApp.svg.png" alt="Ir a la pagina de WhatsApp" class="social_media"></a>
+        </nav>
+    </section>
 
-    <footer>
-		<nav>
-			<a href="index.html">Ir a Página Principal</a>
-		</nav>
-	</footer>
+    <section>
+		<a class= "volver_index" href="index.html">Ir a Página Principal</a>
+	</section>
 </body>
 </html>
