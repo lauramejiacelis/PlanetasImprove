@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Handlee', cursive;
+    background: #031640;
+    color: white;
+    text-align: justify;
+}
+h1{
+    color: #F5E383;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    margin-top: 10px;
+}
+h2{
+    color: #f5c483;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    margin-top: 10px;
+}
+
+#navegacion{
+    background-color: black;
+    width: 300px;
+    float: left;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+}
+#lista_planetas{
+    list-style-type: none;
+}
+.planeta{
+    width: 100px;
+}
+#jupiter{
+    width: 200px;
+}
+#saturno{
+    width: 300px;
+}
+
+.planeta_en_pag{
+    width: 200px;
+    text-align: center;
+    left: 50%;
+    margin-left: 400px;
+}
+
+#cont_planetas{
+    width: 80%;
+}
+
+.contenidos{
+    width: 1000px;
+    float: right;
+    padding: 15px 50px 15px 10px;
+    margin: auto;
+}
+
+#solar_syst{
+    width: 85%;
+}
+
+.social_media{
+    width: 30px;
+}
+
+#redes{
+    position: fixed;
+    margin-top: 10px;
+    margin-right: 10px;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    
+}
+
+#video_uni{
+    width: 90%; 
+}
+
+
+.info_planetas{
+    width: 80%;
+    /*background-color: cornflowerblue;*/
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.planet_videos{
+    margin-left: 250px;
+}
+
+.imgs_dioses{
+    margin-left: 180px;
+}
+
+/*estoy poniendo el link que parezca botón */
+.volver_index{
+    position: fixed;
+    bottom: 0;
+    right: 0%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid sandybrown;
+    background-color: #F5E383;
+    padding: 3px;
+}
+
+/*Esto es para darle enfasis al pasar el cursor */
+.volver_index:hover{
+    background-color: black;
+    color:#F5E383;
+}
+
+/*Esto es con el click sostenido cambia de color */
+.volver_index:active{
+    background-color: aquamarine;
+    color: black;
+
+}
