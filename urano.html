@@ -5,14 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Handlee&display=swap" rel="stylesheet">
     <title>Urano</title>
 </head>
 <body>
-	<header>
-		<h1>URANO</h1>
-		<h3>El más frío del sistema solar</h3>
-        <a href="urano.html"><img src="imgs/Uranus2.png" alt="" width="100"></a>
-		<p>
+    <nav id="navegacion">
+            
+        <h1>Planetas</h1>
+        <br>
+        <p>Haz click en cada planeta para más información</p> <br>
+        <ul id="lista_planetas">
+            <!-- target blank me abre una nueva ventana -->
+            <li>Mercurio </li>
+            <a href="mercurio.html" target="_blank"><img class="planeta" src="imgs/Mercure.webp" alt="mercurio" ></a>    
+            <li>Venus</li>
+            <a href="venus.html" target="_blank"><img src="imgs/venus.png" alt="venus" class="planeta"></a>
+            <li>Tierra</li>
+            <a href="tierra.html" target="_blank"><img src="imgs/earth.png" alt="planeta tierra" class="planeta"></a>
+            <li>Marte</li>
+            <a href="marte.html" target="_blank"><img src="imgs/marte.png" alt="marte" class="planeta"></a>
+            <li>Júpiter</li>
+            <a href="jupiter.html" target="_blank"><img src="imgs/Jupiter.png" alt="jupiter" class="planeta" id="jupiter"></a>
+            <li>Saturno</li>
+            <a href="saturno.html" target="_blank"><img src="imgs/Saturn_from_Hubble.png" alt="saturno" class="planeta" id="saturno"></a>
+            <li>Urano</li>
+            <a href="urano.html" target="_blank"><img src="imgs/Uranus2.png" alt="urano" class="planeta"></a>
+            <li>Neptuno</li>
+            <a href="neptuno.html" target="_blank"><img src="imgs/Neptune_cutout.png" alt="neptuno" class="planeta"></a>
+
+        </ul>
+        <br>
+
+    </nav>
+
+
+	<main class="contenidos">
+		<hr>
+        <br><h1>URANO</h1><br>
+		<hr>
+        <h2>El más frío del sistema solar</h2>
+        <a href="urano.html"><img class="planeta_en_pag" src="imgs/Uranus2.png" alt="Planeta Urano"></a>
+		<p class="info_planetas">
 			Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, 
             y el cuarto más masivo. Aunque es detectable a simple vista en el cielo 
             nocturno, no fue catalogado como planeta por los astrónomos de la antigüedad 
@@ -26,9 +61,10 @@
             diferente de los otros dos gigantes gaseosos (Júpiter y Saturno). Por ello, 
             los astrónomos a veces los clasifican en una categoría diferente, LOS GIGANTES HELADOS.
 		</p>	
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7GBmUVWlMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>NOMBRE Y MITOLOGÍA</h2>
-        <p>
+        <iframe class="planet_videos" width="560" height="315" src="https://www.youtube.com/embed/Y7GBmUVWlMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <hr><br><h2>NOMBRE Y MITOLOGÍA</h2><br><hr>
+        <p class="info_planetas">
             El nombre Urano fue otorgado en honor de la divinidad griega del 
             cielo Urano (del griego antiguo Οὐρανός), el padre de Crono (Saturno) y el 
             abuelo de Zeus (Júpiter). <br>
@@ -58,13 +94,19 @@
             correr el mismo destino que él, traicionado y asesinado por uno de sus hijos. Así es como termina la 
             historia del dios Urano quien fuera el primer rey de los dioses.
         </p>
-        <img src="imgs/urano-dios-2_optimized.jpg" alt="" width="600">
-    </header>
+        <img class="imgs_dioses" src="imgs/urano-dios-2_optimized.jpg" alt="" width="600"> <!-- Revisar esto -->
+    </main>
 
-    <footer>
-		<nav>
-			<a href="index.html">Ir a Página Principal</a>
-		</nav>
-	</footer>
+    <section id="redes">
+        <nav>
+            <a href="https://www.facebook.com/"><img src="imgs\Facebook_f_logo_(2019).png.svg" alt="Ir a la pagina de facebook" class="social_media"> </a>
+            <a href="https://www.instagram.com/"><img src="imgs\instagram.png" alt="Ir a la pagina de instagram" class="social_media"></a>
+            <a  href="https://www.web.whatsapp.com/"><img src="imgs\WhatsApp.svg.png" alt="Ir a la pagina de WhatsApp" class="social_media"></a>
+        </nav>
+    </section>
+
+    <section>
+		<a class= "volver_index" href="index.html">Ir a Página Principal</a>
+	</section>
 </body>
 </html>
