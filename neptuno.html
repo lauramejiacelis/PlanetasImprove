@@ -5,14 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Handlee&display=swap" rel="stylesheet">
     <title>Neptuno</title>
 </head>
 <body>
-	<header>
-		<h1>NEPTUNO</h1>
-		<h3>Estrella del rey del Mar || El planeta de los vientos</h3>
-        <a href="neptuno.html"><img src="imgs/Neptune_cutout.png" alt="" width="100"></a>
-		<p>
+    <nav id="navegacion">
+            
+        <h1>Planetas</h1>
+        <br>
+        <p>Haz click en cada planeta para más información</p> <br>
+        <ul id="lista_planetas">
+            <!-- target blank me abre una nueva ventana -->
+            <li>Mercurio </li>
+            <a href="mercurio.html" target="_blank"><img class="planeta" src="imgs/Mercure.webp" alt="mercurio" ></a>    
+            <li>Venus</li>
+            <a href="venus.html" target="_blank"><img src="imgs/venus.png" alt="venus" class="planeta"></a>
+            <li>Tierra</li>
+            <a href="tierra.html" target="_blank"><img src="imgs/earth.png" alt="planeta tierra" class="planeta"></a>
+            <li>Marte</li>
+            <a href="marte.html" target="_blank"><img src="imgs/marte.png" alt="marte" class="planeta"></a>
+            <li>Júpiter</li>
+            <a href="jupiter.html" target="_blank"><img src="imgs/Jupiter.png" alt="jupiter" class="planeta" id="jupiter"></a>
+            <li>Saturno</li>
+            <a href="saturno.html" target="_blank"><img src="imgs/Saturn_from_Hubble.png" alt="saturno" class="planeta" id="saturno"></a>
+            <li>Urano</li>
+            <a href="urano.html" target="_blank"><img src="imgs/Uranus2.png" alt="urano" class="planeta"></a>
+            <li>Neptuno</li>
+            <a href="neptuno.html" target="_blank"><img src="imgs/Neptune_cutout.png" alt="neptuno" class="planeta"></a>
+
+        </ul>
+        <br>
+
+    </nav>
+
+
+	<main class="contenidos">
+        <hr>
+		<br><h1>NEPTUNO</h1><br>
+		<hr>
+        <h2>Estrella del rey del Mar || El planeta de los vientos</h2>
+        <a href="neptuno.html"><img class="planeta_en_pag" src="imgs/Neptune_cutout.png" alt="" width="100"></a>
+        <hr>
+
+		<p class="info_planetas">
 			Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del 
             sistema solar. Forma parte de los denominados planetas exteriores, y dentro de 
             estos, es uno de los gigantes helados, y es el primero que fue descubierto 
@@ -30,9 +67,10 @@
             <br><br>
             La danza de Júpiter y Neptuno:
 		</p>	
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Th249Fk7pdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>NOMBRE Y MITOLOGÍA</h2>
-        <p>
+        <iframe class="planet_videos" width="560" height="315" src="https://www.youtube.com/embed/Th249Fk7pdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <hr><br><h2>NOMBRE Y MITOLOGÍA</h2><br><hr>
+        <p class="info_planetas">
             Origen del nombre del planeta Saturno
             <br>
             En la mitología romana, Neptuno era el dios del mar, identificado con el griego Poseidón. 
@@ -61,14 +99,19 @@
             en la costa griega antes de la Batalla de Issos y recurrió a las oraciones, «invocando al dios 
             del mar Poseidón, para lo que ordenó que un carro de cuatro caballos fuese lanzado a las olas.»
         </p>
-        <img src="imgs/poseidon_optimezed.jpg" alt="" width="600">
-	</header>
+        <img class="imgs_dioses" src="imgs/poseidon_optimezed.jpg" alt="" width="600"> <!-- Revisar esto -->
+	</main>
 
+    <section id="redes">
+        <nav>
+            <a href="https://www.facebook.com/"><img src="imgs\Facebook_f_logo_(2019).png.svg" alt="Ir a la pagina de facebook" class="social_media"> </a>
+            <a href="https://www.instagram.com/"><img src="imgs\instagram.png" alt="Ir a la pagina de instagram" class="social_media"></a>
+            <a  href="https://www.web.whatsapp.com/"><img src="imgs\WhatsApp.svg.png" alt="Ir a la pagina de WhatsApp" class="social_media"></a>
+        </nav>
+    </section>
 
-    <footer>
-		<nav>
-			<a href="index.html">Ir a Página Principal</a>
-		</nav>
-	</footer>
+    <section>
+		<a class= "volver_index" href="index.html">Ir a Página Principal</a>
+	</section>
 </body>
 </html>
